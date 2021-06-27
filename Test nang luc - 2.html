@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+      <title>Nguyễn Trần Minh Kha - 2</title>
+   	</head>
+   	<body>
+   		<div class="content">
+   			<div class="hinh">
+	   			<img src="https://i.imgur.com/d5ZpZ2a.png" alt="bale">
+	   			<div class="tieude tren">
+		   			<p>an evening of contemporary</p>
+		   			<p>dance</p>
+		   		</div>
+		   		<div class="tieude duoi">
+		   			<p>an evening of contemporary</p>
+		   			<p>dance</p>
+		   		</div>
+	   		</div>
+	   		
+	   		<div class="trai">
+	   			<div class="trai1">
+		   			<p>local & international</p>
+		   			<p>dancers and choreographers</p>
+	   			</div>
+	   			<div class="trai2">
+		   			<p>pansuriya gallery</p>
+		   			<p>bogalay zay st, yangon</p>
+	   			</div>
+	   			<div class="trai3">
+		   			<p>21<sup>st</sup>march</p>
+		   			<p>doors open at 7:00 PM</p>
+		   			<p>performance starts at 7:30 PM</p>
+	   			</div>
+	   			<div class="trai4">
+		   			<p>tickets by donation</p>
+	   			</div>
+	   		</div>
+   		</div>
+   	</body>
+   	<style>
+   		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+   		/* font-family: 'Open Sans', sans-serif; */
+
+   		/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap'); */
+   		/* font-family: 'Barlow Condensed', sans-serif; */
+   		@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+   		/* font-family: 'Abel', sans-serif; */
+		html,body{
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+		}
+		body{
+			background: #f0f0f0;
+			background-size: 100vw;
+			margin: 0;	
+			font-family: 'Open Sans', sans-serif;
+			font-size: 25px;
+    		letter-spacing: -1px;	
+    		line-height: 1;	
+		}
+		p{
+			text-transform:  uppercase; 
+			margin: 0;
+		}
+		.content{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		.hinh > img{
+		    width: 38%;
+		    top: 36px;
+		    left: 37%;	    
+		    position: absolute;
+		}
+		.tieude{
+			font-size: 25px;
+		    letter-spacing: -1px;
+		}
+		.tieude > p:last-child{
+			font-family: 'Abel', sans-serif;
+		    letter-spacing: 0px;
+		    font-weight: 700;
+		}
+		.tren {
+		    position: absolute;
+		    top: 4.5%;
+		    left: 27%;		    
+		}
+		.tren > p:last-child {
+		    font-size: 131px;
+		    padding-left: 30px;
+		    padding-top: 9px;
+		}
+		.duoi {
+		    position: absolute;
+		    right: 5%;
+		    bottom: 12.5%;
+		}
+		.duoi > p:last-child {
+		    font-size: 215px;
+		    padding-top: 16px;
+		    padding-left: 0;
+		}
+
+		.trai > [class*='trai']{
+			position: absolute;			
+		    left: 1%;
+		    line-height: 28px;	    
+		}
+		.trai > [class*='trai'] > p:first-child {
+		    
+		}
+		.trai > [class*='trai']:not(.trai4) > p:first-child {
+		    font-weight: 600;
+		    letter-spacing: -1.5px;
+		}
+		.trai1 {		    
+		    top: 32%;
+		}
+		.trai2 {
+		    top: 42%;
+		}
+		.trai3 {		    
+		    top: 51%;
+		}
+		.trai4 {
+		    top: 64.5%;
+		}
+
+		@media(max-width: 1540px){
+			body{
+				font-size: 23px;
+			}
+			.tieude {
+			    font-size: 22px;
+			    letter-spacing: -2px;
+			}
+			.tren {
+			    top: 4%;
+			}
+			.tren > p:last-child {
+			    font-size: 105px;
+			    padding-left: 24px;
+			    padding-top: 7px;
+			}
+
+			.duoi {
+			    position: absolute;
+			    right: 5%;
+			    bottom: 24%;
+			}
+			.duoi > p:last-child {
+			    font-size: 172px;
+			    padding-top: 16px;
+			    padding-left: 2px;
+			}
+
+			.trai > [class*='trai'] {
+			    line-height: 22px;
+			}
+			.trai > [class*='trai']:not(.trai4) > p:first-child{
+				letter-spacing: -3px;
+			}
+			.trai > [class*='trai']:not(.trai4) > p:not(:first-child) {
+			    letter-spacing: -2.6px;
+			}
+			.trai1 {
+			    top: 28%;
+			}
+			.trai2 {
+			    top: 36.5%;
+			}
+			
+			.trai3 {
+			    top: 44%;
+			}
+			.trai4 {
+			    top: 56%;
+			}
+		}
+		@media(max-width: 1366px){
+			body {
+			    font-size: 18px;
+			}
+			.tieude {
+			    font-size: 20px;
+			    letter-spacing: -2px;
+			}
+			.tren > p:last-child {
+			    font-size: 89px;
+			}
+			.duoi {
+			    position: absolute;
+			    right: 5.5%;
+			    bottom: 24%;
+			}
+			.duoi > p:last-child {
+			    font-size: 150px;
+			    padding-top: 16px;
+			    padding-left: 2px;
+			}
+			.trai > [class*='trai']:not(.trai4) > p:first-child {
+			    letter-spacing: -1px;
+			}
+			.trai > [class*='trai'] {
+			    line-height: 20px;
+			}
+			.trai > [class*='trai']:not(.trai4) > p:not(:first-child) {
+			    letter-spacing: -1px;
+			}
+		}
+	</style>
+</html>
